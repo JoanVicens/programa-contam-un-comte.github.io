@@ -17,7 +17,7 @@ $light-blue: #a8d6d7;
 
 @font-face {
    font-family: 'Eraser';
-   src: url("fonts/Eraser.ttf") format("truetype");
+   src: url("fonts/chawp.ttf") format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
@@ -26,8 +26,7 @@ $light-blue: #a8d6d7;
 h1, h2 {
     color: $yellow-title;
     text-shadow: 
-        2px -.5px darken($color: $yellow-title, $amount: 15),
-        1px 1px 10px #fff, 1px 1px 10px #ccc;
+        2px -0.5px #c8b679, 1px 1px #e1cd88;
     font-family: 'Supersonic Rocketship';
 }
 
@@ -48,7 +47,7 @@ h2{
 .divider {
     height: 5px;
     width: 100%;
-    background-color: #606060;
+    background-color: #3d5e7b;
     padding: 0 !important;
 }
 
@@ -75,8 +74,8 @@ body {
         background-size: contain;
         background-position: center bottom;
         z-index: 1;
-        -webkit-filter: drop-shadow( 0px -0px 10px #444 );
-        filter: drop-shadow( 0px -0px 10px #444 );
+        -webkit-filter: drop-shadow(3px 2px 0px #e0c5ba);
+        filter: drop-shadow(3px 2px 0px #e0c5ba);
     }
 
 }
@@ -106,8 +105,8 @@ header {
         z-index: 0;
 
         img {
-            -webkit-filter: drop-shadow( 0px 5px 7px #222 );
-            filter: drop-shadow( 0px 5px 7px #222 );
+            -webkit-filter: drop-shadow(0px 5px 7px #3d5e7b);
+            filter: drop-shadow(0px 5px 7px #3d5e7b);
         }
     }
 
@@ -164,6 +163,7 @@ main>div {
         @extend .eraser;
         font-size: 1.3rem;
         display: inline;
+        padding: .3rem;
     }
     .any {
         float: right;
@@ -193,7 +193,7 @@ main>div {
     .short-description {
         font-family: 'Poiret One', cursive;
         -webkit-text-stroke-width: .5px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: #35536c;
         padding-left: .5rem;
     }
 }
@@ -207,7 +207,7 @@ main>div {
     p {
         font-family: 'Poiret One', cursive;
         -webkit-text-stroke-width: .2px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: #35536c;
         line-height: 1.7rem;
         margin-bottom: .8rem;
     }
@@ -228,7 +228,7 @@ main>div {
         p {
         font-family: 'Poiret One', cursive;
         -webkit-text-stroke-width: .2px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: #35536c;
         line-height: 1.7rem;
         margin-bottom: .8rem;
     }
@@ -246,7 +246,7 @@ footer {
         padding: 1rem;
         font-family: 'Poiret One', cursive;
         -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: #35536c;
     }
 
     .nube-azul {
@@ -254,8 +254,8 @@ footer {
         bottom: -10px;
         right: 0;
         width: 100%;
-        -webkit-filter: drop-shadow( 0px -0px 10px #444 );
-        filter: drop-shadow( 0px -0px 10px #444 );
+        -webkit-filter: drop-shadow(0px 0px 8px #2b6263);
+        filter: drop-shadow(0px 0px 8px #2b6263);
     }
 
     .nube-naranja {
@@ -263,8 +263,8 @@ footer {
         bottom: -10px;
         left: 0;
         width: 100%;
-        -webkit-filter: drop-shadow( 0px -0px 10px #444 );
-        filter: drop-shadow( 0px -0px 10px #444 );
+        -webkit-filter: drop-shadow(0px 0px 8px #ae7c72);
+        filter: drop-shadow(0px 0px 8px #ae7c72);
     }
 
     @keyframes floating-negative { 
@@ -280,8 +280,6 @@ footer {
     } 
 
     .ilustracion {
-        -webkit-filter: drop-shadow( 0px -0px 5px #222 );
-        filter: drop-shadow( 0px -0px 5px #222 );
         animation: floating-positive 3s ease-in-out infinite
     }
 
