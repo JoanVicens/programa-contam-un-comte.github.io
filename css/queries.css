@@ -4,6 +4,12 @@
   z-index: 90;
 }
 
+@media (min-width: 1585px) {
+  .header-wrapper::after {
+    display: none;
+  }
+}
+
 @media (min-width: 500px) {
   #mobile-body-wrapper {
     margin: 0 auto;
