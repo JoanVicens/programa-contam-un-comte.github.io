@@ -99,6 +99,11 @@ header #portada p {
   margin-bottom: 2rem;
 }
 
+header #portada img {
+  -webkit-filter: drop-shadow(0px 5px 7px #222);
+  filter: drop-shadow(0px 5px 7px #222);
+}
+
 header .icons {
   margin-top: auto;
   display: -ms-grid;
