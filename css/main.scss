@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+$yellow-title: #fae497;
+$pink-cloud: #f9dbcf;
+$eraser-color: #4d7699;
+
+@font-face {
+   font-family: 'Supersonic Rocketship';
+   src: url("fonts/Supersonic_Rocketship.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: 'Eraser';
+   src: url("fonts/Eraser.ttf") format("truetype");
+}
+
+h1, h2 {
+    color: $yellow-title;
+    text-shadow: 2px -.5px darken($color: $yellow-title, $amount: 15);
+    font-family: 'Supersonic Rocketship';
+}
+
+.eraser {
+    color: $eraser-color;
+    font-family: 'Eraser';
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+body {
+    background-color: #a8d6d7;
+}
+#mobile-body-wrapper {
+    overflow-x: hidden;
+}
+
+.header-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    
+    &::after{
+        content: '';
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        background: url('../assets/nube_rosa.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+        z-index: 1;
+    }
+
+}
+
+header {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+
+
+    >div{
+        padding: 1rem;
+    }
+
+    height: 100vh;
+
+    h1 {
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+
+    #portada{
+        margin: 1.4rem;
+        margin-bottom: 2rem;
+
+        p {
+            margin-bottom: 2rem;
+        }
+
+        z-index: 0;
+    }
+
+    .icons {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: 90px auto;
+        grid-template-rows: 20px auto;
+        text-align: left;
+        max-width: 100%;
+        background-color: $pink-cloud;
+
+        font-family: 'Eraser';
+        font-size: .8rem;
+
+        z-index: 2;
+        img {
+            height: 25px;
+            width: auto;
+        }
+        .colabora{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            img {
+                margin-bottom: 10px;
+            }
+        }
+
+        
+    }
+}
