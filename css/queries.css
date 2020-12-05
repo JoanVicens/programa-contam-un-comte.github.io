@@ -1,0 +1,27 @@
+.icons-wrapper {
+  background-color: #f9dbcf;
+  margin-top: auto;
+  z-index: 90;
+}
+
+@media (min-width: 500px) {
+  #mobile-body-wrapper {
+    margin: 0 auto;
+  }
+  .limit-width, header #portada, header .icons, main #programa,
+  main #director,
+  main #banda, footer .footer-wrapper {
+    max-width: 658px;
+    margin: 0 auto;
+  }
+  header .icons-wrapper {
+    background-color: #f9dbcf;
+    margin-top: auto;
+    z-index: 90;
+  }
+  header .logo_banda {
+    margin-top: 5px;
+    height: 60px;
+  }
+}
+/*# sourceMappingURL=queries.css.map */
