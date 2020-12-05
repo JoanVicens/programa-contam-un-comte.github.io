@@ -327,9 +327,10 @@ footer .ilustracion {
 
 footer .peer-gynt {
   position: absolute;
-  bottom: 25px;
-  left: 160px;
+  bottom: 3.38%;
+  left: 44.44%;
   width: 35%;
+  max-width: 210px;
   rotate: 10deg;
   -webkit-animation: floating-positive 3s ease-in-out infinite;
           animation: floating-positive 3s ease-in-out infinite;
@@ -337,9 +338,10 @@ footer .peer-gynt {
 
 footer .quijote {
   position: absolute;
-  bottom: 350px;
-  left: 30px;
+  bottom: 47.3%;
+  left: 8.33%;
   width: 35%;
+  max-width: 115px;
   rotate: 90deg;
   -webkit-animation: floating-negative 3s ease-in-out infinite;
           animation: floating-negative 3s ease-in-out infinite;
@@ -347,9 +349,10 @@ footer .quijote {
 
 footer .quijote2 {
   position: absolute;
-  bottom: 125px;
-  left: 50px;
+  bottom: 16.9%;
+  left: 13.88%;
   width: 35%;
+  max-width: 220px;
   rotate: 10deg;
   -webkit-animation: floating-negative 3s ease-in-out infinite;
           animation: floating-negative 3s ease-in-out infinite;
@@ -357,9 +360,10 @@ footer .quijote2 {
 
 footer .rapunzel {
   position: absolute;
-  bottom: 280px;
-  left: 230px;
+  bottom: 37,83%;
+  left: 63.88%;
   width: 25%;
+  max-width: 150px;
   rotate: -5deg;
   -webkit-animation: floating-negative 3s ease-in-out infinite;
           animation: floating-negative 3s ease-in-out infinite;
