@@ -368,4 +368,20 @@ footer .rapunzel {
   -webkit-animation: floating-negative 3s ease-in-out infinite;
           animation: floating-negative 3s ease-in-out infinite;
 }
+
+#qr {
+  height: 100vh;
+  padding: 1.5rem;
+}
+
+#qr .qr-wrapper {
+  border: 3px dashed #4d7699;
+  height: 100%;
+  border-radius: 15px;
+}
+
+#qr .qr-wrapper h2 {
+  padding: 1rem;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

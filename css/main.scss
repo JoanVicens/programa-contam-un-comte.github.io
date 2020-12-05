@@ -321,3 +321,18 @@ footer {
         animation: floating-negative 3s ease-in-out infinite
     }
 }
+
+#qr {
+    height: 100vh;
+    padding: 1.5rem;
+    .qr-wrapper {
+        border: 3px dashed $eraser-color;
+        height: 100%;
+        border-radius: 15px;
+
+        h2 {
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+}
