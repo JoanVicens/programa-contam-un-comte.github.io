@@ -7,6 +7,7 @@
 $yellow-title: #fae497;
 $pink-cloud: #f9dbcf;
 $eraser-color: #4d7699;
+$teal-border: #6ec0c7;
 
 @font-face {
    font-family: 'Supersonic Rocketship';
@@ -18,10 +19,22 @@ $eraser-color: #4d7699;
    src: url("fonts/Eraser.ttf") format("truetype");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+
 h1, h2 {
     color: $yellow-title;
-    text-shadow: 2px -.5px darken($color: $yellow-title, $amount: 15);
+    text-shadow: 
+        2px -.5px darken($color: $yellow-title, $amount: 15),
+        1px 1px 10px #fff, 1px 1px 10px #ccc;
     font-family: 'Supersonic Rocketship';
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+h2{
+    font-size: 1.7rem;
 }
 
 .eraser {
@@ -29,6 +42,13 @@ h1, h2 {
     font-family: 'Eraser';
     font-size: 1.2rem;
     line-height: 2rem;
+}
+
+.divider {
+    height: 5px;
+    width: 100%;
+    background-color: #606060;
+    padding: 0 !important;
 }
 
 body {
@@ -40,7 +60,6 @@ body {
 
 .header-wrapper {
     position: relative;
-    overflow: hidden;
 
     
     &::after{
@@ -55,6 +74,8 @@ body {
         background-size: contain;
         background-position: center bottom;
         z-index: 1;
+        -webkit-filter: drop-shadow( 0px -0px 10px #444 );
+        filter: drop-shadow( 0px -0px 10px #444 );
     }
 
 }
@@ -72,13 +93,6 @@ header {
     }
 
     height: 100vh;
-
-    h1 {
-        font-size: 2.3rem;
-    }
-    h2{
-        font-size: 1.7rem;
-    }
 
     #portada{
         margin: 1.4rem;
@@ -119,5 +133,62 @@ header {
         }
 
         
+    }
+}
+
+
+main>div {
+    padding: 1rem;
+}
+
+
+#programa {
+    .obra h3{
+        @extend .eraser;
+        font-size: 1.3rem;
+        display: inline;
+    }
+    .any {
+        float: right;
+    }
+    .narrador {
+        display: inline;
+        margin-left: 10px;
+    }
+    .duracio {
+        font-family: 'Poiret One', cursive;
+        padding-left: .5rem;
+        margin-top: .2rem;
+    }
+            
+    ul {
+        list-style: none;
+        li {
+            margin: 15px 0;
+        }
+    }
+
+
+    .short-description {
+        font-family: 'Poiret One', cursive;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+        padding-left: .5rem;
+    }
+}
+
+#director {
+
+}
+
+#banda {
+    
+    img {
+        width: 90%;
+        border: 10px solid $teal-border;
+        outline: 10px solid $pink-cloud;
+        margin: 0 auto;
+        display: block;
+        margin-top: 1rem;
     }
 }
