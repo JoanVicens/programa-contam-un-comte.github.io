@@ -1,0 +1,18 @@
+@media print {
+
+    body {
+        -webkit-print-color-adjust: exact !important;
+        background-color: #a8d6d7 !important;
+    }
+    * {
+        color: black !important;
+    }
+
+    h1, h2 {
+        text-shadow: none !important;
+    }
+
+    #portada {
+        z-index: 9999;
+    }
+}

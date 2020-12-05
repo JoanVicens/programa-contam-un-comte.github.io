@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" media="print" href="css/printing.css" />
+
+    <script src="js/jspdf.min.js"></script>
     <title>Programa de mà</title>
 </head>
 <body>
@@ -230,4 +233,39 @@
     
 
 </body>
+<script>
+        let a = document.querySelector("#mobile-body-wrapper");
+      let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
+
+        mywindow.document.write(`<html><head><title></title>`);
+        mywindow.document.write('</head><body >');
+        mywindow.document.write(a.innerHTML);
+        mywindow.document.write('</body></html>');
+
+        mywindow.document.close(); // necessary for IE >= 10
+        mywindow.focus(); // necessary for IE >= 10*/
+
+        mywindow.print();
+        mywindow.close();
+
+
+
+    // let a = document.querySelector("#mobile-body-wrapper");
+    // var printDoc = new jsPDF();
+    //     printDoc.fromHTML(a, 10, 10, { 'width': 180 });
+    //     printDoc.autoPrint();
+    //     printDoc.output("dataurlnewwindow"); // this opens a new popup,  after this the PDF opens the print window view but there are browser inconsistencies with how this is handled
+
+
+    
+    // console.log(a);
+    // var divContents = a.innerHTML;
+    // var printWindow = window.open('', '', 'height=400,width=800');
+    // printWindow.document.write('<html><head><title>DIV Contents</title>');
+    // printWindow.document.write('</head><body >');
+    // printWindow.document.write(divContents);
+    // printWindow.document.write('</body></html>');
+    // printWindow.document.close();
+    // printWindow.print();
+</script>
 </html>
