@@ -148,6 +148,9 @@ header {
 
 main>div {
     padding: 1rem;
+    h2 {
+        margin-bottom: .7rem;
+    }
 }
 
 
@@ -173,7 +176,7 @@ main>div {
     ul {
         list-style: none;
         li {
-            margin: 15px 0;
+            margin: .7rem 0;
         }
     }
 
@@ -186,7 +189,12 @@ main>div {
     }
 }
 
+
 #director {
+    h2 {
+        margin-bottom: .7rem;
+    }
+
     p {
         font-family: 'Poiret One', cursive;
         -webkit-text-stroke-width: .2px;

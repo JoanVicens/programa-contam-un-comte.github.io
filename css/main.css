@@ -150,6 +150,10 @@ main > div {
   padding: 1rem;
 }
 
+main > div h2 {
+  margin-bottom: .7rem;
+}
+
 #programa .obra h3 {
   font-size: 1.3rem;
   display: inline;
@@ -175,7 +179,7 @@ main > div {
 }
 
 #programa ul li {
-  margin: 15px 0;
+  margin: .7rem 0;
 }
 
 #programa .short-description {
@@ -183,6 +187,10 @@ main > div {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: black;
   padding-left: .5rem;
+}
+
+#director h2 {
+  margin-bottom: .7rem;
 }
 
 #director p {
