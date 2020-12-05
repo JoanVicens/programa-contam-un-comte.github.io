@@ -8,6 +8,7 @@ $yellow-title: #fae497;
 $pink-cloud: #f9dbcf;
 $eraser-color: #4d7699;
 $teal-border: #6ec0c7;
+$light-blue: #a8d6d7;
 
 @font-face {
    font-family: 'Supersonic Rocketship';
@@ -52,7 +53,7 @@ h2{
 }
 
 body {
-    background-color: #a8d6d7;
+    background-color: $light-blue;
 }
 #mobile-body-wrapper {
     overflow-x: hidden;
@@ -95,7 +96,7 @@ header {
     height: 100vh;
 
     #portada{
-        margin: 1.4rem;
+        // margin: 1.4rem;
         margin-bottom: 2rem;
 
         p {
@@ -122,6 +123,14 @@ header {
             height: 25px;
             width: auto;
         }
+
+        @media (max-width: 500px) {
+            .logo_banda {
+                margin-top: 5px;
+                height: 60px;
+            }
+        }
+
         .colabora{
             display: flex;
             flex-direction: row;
@@ -178,7 +187,13 @@ main>div {
 }
 
 #director {
-
+    p {
+        font-family: 'Poiret One', cursive;
+        -webkit-text-stroke-width: .2px;
+        -webkit-text-stroke-color: black;
+        line-height: 1.7rem;
+        margin-bottom: .8rem;
+    }
 }
 
 #banda {
@@ -190,5 +205,99 @@ main>div {
         margin: 0 auto;
         display: block;
         margin-top: 1rem;
+        margin-bottom: 1.3rem;
+    }
+
+        p {
+        font-family: 'Poiret One', cursive;
+        -webkit-text-stroke-width: .2px;
+        -webkit-text-stroke-color: black;
+        line-height: 1.7rem;
+        margin-bottom: .8rem;
+    }
+}
+
+footer {
+    background-color: $pink-cloud;
+    height: 100vh;
+    overflow: hidden;
+
+    position: relative;
+
+    .large {
+        font-size: 3rem;
+        padding: 1rem;
+        font-family: 'Poiret One', cursive;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .nube-azul {
+        position: absolute;
+        bottom: -10px;
+        right: 0;
+        width: 100%;
+        -webkit-filter: drop-shadow( 0px -0px 10px #444 );
+        filter: drop-shadow( 0px -0px 10px #444 );
+    }
+
+    .nube-naranja {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        -webkit-filter: drop-shadow( 0px -0px 10px #444 );
+        filter: drop-shadow( 0px -0px 10px #444 );
+    }
+
+    @keyframes floating-negative { 
+        0% { transform: translate(0,  0px); } 
+        50%  { transform: translate(0, -15px); } 
+        100%   { transform: translate(0, -0px); }     
+    }
+
+    @keyframes floating-positive { 
+        0% { transform: translate(0,  0px); } 
+        50%  { transform: translate(0, 15px); } 
+        100%   { transform: translate(0, -0px); }     
+    } 
+
+    .ilustracion {
+        -webkit-filter: drop-shadow( 0px -0px 5px #222 );
+        filter: drop-shadow( 0px -0px 5px #222 );
+        animation: floating-positive 3s ease-in-out infinite
+    }
+
+    .peer-gynt {
+        position: absolute;
+        bottom: 25px;
+        left: 160px;
+        width: 35%;
+        rotate: 10deg;
+        animation: floating-positive 3s ease-in-out infinite
+    }
+    .quijote {
+        position: absolute;
+        bottom: 350px;
+        left: 30px;
+        width: 35%;
+        rotate: 90deg;
+        animation: floating-negative 3s ease-in-out infinite
+    }
+    .quijote2 {
+        position: absolute;
+        bottom: 125px;
+        left: 50px;
+        width: 35%;
+        rotate: 10deg;
+        animation: floating-negative 3s ease-in-out infinite
+    }
+    .rapunzel {
+        position: absolute;
+        bottom: 280px;
+        left: 230px;
+        width: 25%;
+        rotate: -5deg;
+        animation: floating-negative 3s ease-in-out infinite
     }
 }

@@ -91,9 +91,12 @@ header > div {
 }
 
 header #portada {
-  margin: 1.4rem;
   margin-bottom: 2rem;
   z-index: 0;
+}
+
+header #portada p {
+  margin-bottom: 2rem;
 }
 
 header .icons {
@@ -107,7 +110,6 @@ header .icons {
   text-align: left;
   max-width: 100%;
   background-color: #f9dbcf;
-  padding-bottom: 0;
   font-family: 'Eraser';
   font-size: .8rem;
   z-index: 2;
@@ -118,14 +120,10 @@ header .icons img {
   width: auto;
 }
 
-header .icons .logo_banda {
-  height: 25px;
-}
-
 @media (max-width: 500px) {
   header .icons .logo_banda {
     margin-top: 5px;
-    height: 50px;
+    height: 60px;
   }
 }
 
@@ -187,21 +185,12 @@ main > div {
   padding-left: .5rem;
 }
 
-#director {
+#director p {
   font-family: 'Poiret One', cursive;
-}
-
-#director h3 {
-  font-family: 'Eraser';
-  color: #4d7699;
-  margin: 1rem 0;
-}
-
-#director .block-text {
   -webkit-text-stroke-width: .2px;
   -webkit-text-stroke-color: black;
-  line-height: 1.8rem;
-  margin-bottom: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: .8rem;
 }
 
 #banda img {
@@ -211,5 +200,154 @@ main > div {
   margin: 0 auto;
   display: block;
   margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+#banda p {
+  font-family: 'Poiret One', cursive;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: black;
+  line-height: 1.7rem;
+  margin-bottom: .8rem;
+}
+
+footer {
+  background-color: #f9dbcf;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+footer .large {
+  font-size: 3rem;
+  padding: 1rem;
+  font-family: 'Poiret One', cursive;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+footer .nube-azul {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 10px #444);
+  filter: drop-shadow(0px 0px 10px #444);
+}
+
+footer .nube-naranja {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 10px #444);
+  filter: drop-shadow(0px 0px 10px #444);
+}
+
+@-webkit-keyframes floating-negative {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating-negative {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@-webkit-keyframes floating-positive {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes floating-positive {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+footer .ilustracion {
+  -webkit-filter: drop-shadow(0px 0px 5px #222);
+  filter: drop-shadow(0px 0px 5px #222);
+  -webkit-animation: floating-positive 3s ease-in-out infinite;
+          animation: floating-positive 3s ease-in-out infinite;
+}
+
+footer .peer-gynt {
+  position: absolute;
+  bottom: 25px;
+  left: 160px;
+  width: 35%;
+  rotate: 10deg;
+  -webkit-animation: floating-positive 3s ease-in-out infinite;
+          animation: floating-positive 3s ease-in-out infinite;
+}
+
+footer .quijote {
+  position: absolute;
+  bottom: 350px;
+  left: 30px;
+  width: 35%;
+  rotate: 90deg;
+  -webkit-animation: floating-negative 3s ease-in-out infinite;
+          animation: floating-negative 3s ease-in-out infinite;
+}
+
+footer .quijote2 {
+  position: absolute;
+  bottom: 125px;
+  left: 50px;
+  width: 35%;
+  rotate: 10deg;
+  -webkit-animation: floating-negative 3s ease-in-out infinite;
+          animation: floating-negative 3s ease-in-out infinite;
+}
+
+footer .rapunzel {
+  position: absolute;
+  bottom: 280px;
+  left: 230px;
+  width: 25%;
+  rotate: -5deg;
+  -webkit-animation: floating-negative 3s ease-in-out infinite;
+          animation: floating-negative 3s ease-in-out infinite;
 }
 /*# sourceMappingURL=main.css.map */
