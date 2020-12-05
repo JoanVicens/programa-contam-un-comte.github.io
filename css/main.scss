@@ -171,6 +171,10 @@ main>div {
     .narrador {
         display: inline;
         margin-left: 10px;
+        color: $pink-cloud;
+        background-color: $eraser-color;
+        padding: .2rem;
+        border-radius: 4px;
     }
     .duracio {
         font-family: 'Poiret One', cursive;
