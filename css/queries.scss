@@ -44,12 +44,8 @@ $maximum-width: 658px;
         }
         
     }
-    main {
-        #programa,
-        #director,
-        #banda {
-            @extend .limit-width;
-        }
+    main section {
+        @extend .limit-width;
     }
 
     footer {

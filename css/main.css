@@ -151,18 +151,19 @@ header .icons .colabora img {
   margin-bottom: 10px;
 }
 
-main > div {
+main > section {
   padding: 1rem;
 }
 
-main > div h2 {
-  margin-bottom: .7rem;
+main h2 {
+  margin-bottom: 1.2rem !important;
 }
 
 #programa .obra h3 {
   font-size: 1.3rem;
   display: inline;
   padding: .3rem;
+  line-height: 2.6rem;
 }
 
 #programa .any {
@@ -174,7 +175,7 @@ main > div h2 {
   margin-left: 10px;
   color: #f9dbcf;
   background-color: #4d7699;
-  padding: .2rem;
+  padding: .2rem .4rem;
   border-radius: 4px;
 }
 
@@ -189,7 +190,7 @@ main > div h2 {
 }
 
 #programa ul li {
-  margin: .7rem 0;
+  margin: 1.2rem 0;
 }
 
 #programa .short-description {
@@ -197,10 +198,6 @@ main > div h2 {
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #35536c;
   padding-left: .5rem;
-}
-
-#director h2 {
-  margin-bottom: .7rem;
 }
 
 #director p {
@@ -217,7 +214,7 @@ main > div h2 {
   outline: 10px solid #f9dbcf;
   margin: 0 auto;
   display: block;
-  margin-top: 1rem;
+  margin-top: calc(1rem + 10px);
   margin-bottom: 1.3rem;
 }
 

@@ -14,9 +14,7 @@
   #mobile-body-wrapper {
     margin: 0 auto;
   }
-  .limit-width, header #portada, header .icons, main #programa,
-  main #director,
-  main #banda, footer .footer-wrapper {
+  .limit-width, header #portada, header .icons, main section, footer .footer-wrapper {
     max-width: 658px;
     margin: 0 auto;
   }

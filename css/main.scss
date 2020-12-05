@@ -150,10 +150,13 @@ header {
 }
 
 
-main>div {
-    padding: 1rem;
+main {
+    >section {
+        padding: 1rem;
+    }
+
     h2 {
-        margin-bottom: .7rem;
+        margin-bottom: 1.2rem !important;
     }
 }
 
@@ -164,6 +167,7 @@ main>div {
         font-size: 1.3rem;
         display: inline;
         padding: .3rem;
+        line-height: 2.6rem;
     }
     .any {
         float: right;
@@ -173,7 +177,7 @@ main>div {
         margin-left: 10px;
         color: $pink-cloud;
         background-color: $eraser-color;
-        padding: .2rem;
+        padding: .2rem .4rem;
         border-radius: 4px;
     }
     .duracio {
@@ -185,7 +189,7 @@ main>div {
     ul {
         list-style: none;
         li {
-            margin: .7rem 0;
+            margin: 1.2rem 0;
         }
     }
 
@@ -200,10 +204,6 @@ main>div {
 
 
 #director {
-    h2 {
-        margin-bottom: .7rem;
-    }
-
     p {
         font-family: 'Poiret One', cursive;
         -webkit-text-stroke-width: .2px;
@@ -214,14 +214,13 @@ main>div {
 }
 
 #banda {
-    
     img {
         width: 90%;
         border: 10px solid $teal-border;
         outline: 10px solid $pink-cloud;
         margin: 0 auto;
         display: block;
-        margin-top: 1rem;
+        margin-top: calc(1rem + 10px);
         margin-bottom: 1.3rem;
     }
 
