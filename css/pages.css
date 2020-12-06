@@ -2,6 +2,7 @@
 @import url("./queries.css");
 header {
   height: auto;
+  min-height: 1px;
 }
 
 main {
@@ -19,6 +20,8 @@ h2 {
   font-family: 'Poiret One', cursive;
   color: #f9dbcf;
   text-shadow: none;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .text {

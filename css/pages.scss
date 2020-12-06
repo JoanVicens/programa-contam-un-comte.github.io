@@ -9,6 +9,7 @@ $light-blue: #a8d6d7;
 
 header {
     height: auto;
+    min-height: 1px;
 }
 
 main {
@@ -27,7 +28,8 @@ h2 {
     font-family: 'Poiret One', cursive;
     color: $pink-cloud;
     text-shadow: none;
-    
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .text {
