@@ -377,18 +377,36 @@ footer {
 }
 
 #qr {
+    //background-color: white;
     height: 100vh;
     padding: 1.5rem;
     box-sizing: border-box;
+    
     .qr-wrapper {
-        border: 3px dashed $eraser-color;
+        
         height: 100%;
         border-radius: 15px;
-
+        display: flex;
+        flex-direction: column;
         h2 {
             padding: 1rem;
             text-align: center;
         }
+    }
+
+    .qr {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+
+    }
+
+    img {
+        width: 100%;
+                border: 3px dashed $eraser-color;
+        background-color: white;
+        border-radius: 15px;
+        background-clip: padding-box;
     }
 }
 
