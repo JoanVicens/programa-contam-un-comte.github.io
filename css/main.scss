@@ -49,6 +49,22 @@ h2{
     font-size: 1.7rem;
 }
 
+p.sub-header {
+    margin-bottom: .4rem;
+    font-family: 'Poiret One', cursive;
+    padding-left: .5rem;
+    font-size: initial;
+    color: black !important;
+}
+
+.text {
+    font-family: 'Poiret One', cursive;
+    line-height: 1.7rem;
+    margin-bottom: .8rem;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: #35536c;
+}
+
 .eraser {
     color: $eraser-color;
     font-family: 'Eraser';
@@ -206,6 +222,10 @@ main {
         text-decoration: none;
         color: inherit;
     }
+    h2 {
+        margin-bottom: .6rem !important;
+    }
+
     .obra h3{
         @extend .eraser;
         font-size: 1.3rem;
@@ -303,6 +323,11 @@ footer {
         color: $yellow-title;
         text-shadow: 
             2px -0.5px #c8b679, 1px 1px #e1cd88;
+    }
+
+    .sub-header {
+        padding: 1rem;
+        font-size: 2rem !important;
     }
 
     .nube-azul {
@@ -429,6 +454,16 @@ footer {
             font-family: 'Poiret One', cursive;
             -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color: #35536c;
+            font-size: 30px;
+            line-height: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 30px;
+                padding-right: 20px;
+            }
         }
     }
 
