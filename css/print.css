@@ -1,0 +1,30 @@
+#programa,
+#director,
+#narrador,
+#banda,
+#qr {
+    break-after: always;
+}
+
+@media print {
+    .divider {
+        display: none;
+    }
+
+    #qr {
+        max-height: 100vh;
+    }
+    .social-wrapper {
+        height: 100vh;
+    }
+    #social {
+        max-height: 100vh;
+    }
+
+    main h2 {
+        font-size: 3rem;
+    }
+    #qr h2 {
+        font-size: 3rem;
+    }
+}

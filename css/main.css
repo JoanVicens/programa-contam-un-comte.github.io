@@ -160,6 +160,10 @@ main h2 {
   margin-bottom: 1.2rem !important;
 }
 
+#programa {
+  padding-bottom: 0;
+}
+
 #programa a {
   text-decoration: none;
   color: inherit;
@@ -193,10 +197,16 @@ main h2 {
 
 #programa ul {
   list-style: none;
+  border-top: 1px solid #4d7699;
+  margin: 0 -1rem;
 }
 
 #programa ul li {
-  margin: 1.2rem 0;
+  padding: 1rem 1rem;
+}
+
+#programa ul li:nth-child(even) {
+  background-color: #6ec0c7;
 }
 
 #programa .short-description {
@@ -237,15 +247,17 @@ footer {
   background-color: #f9dbcf;
   height: 100vh;
   overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
 footer .large {
   font-size: 3rem;
   padding: 1rem;
-  font-family: 'Poiret One', cursive;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #35536c;
+  font-family: 'Supersonic Rocketship';
+  color: #f4b9aa;
+  text-shadow: 2px -0.5px , 1px 1px #f4b9aa;
 }
 
 footer .nube-azul {
@@ -378,6 +390,8 @@ footer .rapunzel {
 #qr {
   height: 100vh;
   padding: 1.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #qr .qr-wrapper {
@@ -389,6 +403,10 @@ footer .rapunzel {
 #qr .qr-wrapper h2 {
   padding: 1rem;
   text-align: center;
+}
+
+.social-wrapper {
+  background-color: #6ec0c7;
 }
 
 #social {

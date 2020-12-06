@@ -32,7 +32,7 @@
   #mobile-body-wrapper {
     margin: 0 auto;
   }
-  .limit-width, header #portada, header .icons, main section, footer .footer-wrapper {
+  .limit-width, header #portada, header .icons, main section, footer .footer-wrapper, #social {
     max-width: 658px;
     margin: 0 auto;
   }
@@ -47,6 +47,10 @@
   header .logo_banda {
     margin-top: 5px;
     height: 60px;
+  }
+  footer .large {
+    position: relative;
+    z-index: 99;
   }
 }
 /*# sourceMappingURL=queries.css.map */

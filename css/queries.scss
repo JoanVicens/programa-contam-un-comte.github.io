@@ -67,7 +67,6 @@ $maximum-width: 658px;
             margin-top: 5px;
             height: 60px;
         }
-        
     }
     main section {
         @extend .limit-width;
@@ -77,6 +76,14 @@ $maximum-width: 658px;
         .footer-wrapper {
             @extend .limit-width;
         }
+        .large {
+            position: relative;
+            z-index: 99;
+        }
+    }
+
+    #social {
+        @extend .limit-width;
     }
 
 
