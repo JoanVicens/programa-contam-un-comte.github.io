@@ -4,7 +4,7 @@
   z-index: 90;
 }
 
-.qr img {
+img.qr {
   max-height: 800px;
 }
 
@@ -51,6 +51,9 @@
   header .logo_banda {
     margin-top: 5px;
     height: 60px;
+  }
+  #qr img.shar {
+    display: none;
   }
   footer .large {
     position: relative;

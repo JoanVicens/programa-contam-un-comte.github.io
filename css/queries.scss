@@ -8,10 +8,8 @@ $maximum-width: 658px;
     z-index: 90;
 }
 
-.qr {
-    img {
-        max-height: 800px;
-    }
+img.qr {
+    max-height: 800px;
 }
 
 @media (min-width: 1585px) {
@@ -76,6 +74,10 @@ $maximum-width: 658px;
     }
     main section {
         @extend .limit-width;
+    }
+
+    #qr img.shar {
+        display: none;
     }
 
     footer {
