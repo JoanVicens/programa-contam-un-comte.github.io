@@ -12,10 +12,32 @@ $maximum-width: 658px;
     .header-wrapper::after {
         display: none;
     }
+    header{ 
+        h1 {
+            font-size: 6rem !important;
+        }
+        h2 {
+            font-size: 3rem !important;
+        }
+        .icons-wrapper {
+            background-color: #f9dbcf;
+            margin-top: auto;
+            z-index: 90;
+        }
+        .icons {
+            max-width: none;
+        }
+
+        .logo_banda {
+            margin-top: 5px;
+            height: 60px;
+        }
+    }
 }
 
 
 @media (min-width: 500px) {
+
     #mobile-body-wrapper {
         margin: 0 auto;
     }
@@ -26,6 +48,9 @@ $maximum-width: 658px;
     }
 
     header {
+        h1 {
+            font-size: 3rem;
+        }
         #portada {
             @extend .limit-width;
         }

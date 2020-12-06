@@ -219,6 +219,7 @@ main h2 {
   border: 10px solid #6ec0c7;
   outline: 10px solid #f9dbcf;
   margin: 0 auto;
+  max-width: 600px;
   display: block;
   margin-top: calc(1rem + 10px);
   margin-bottom: 1.3rem;
