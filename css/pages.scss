@@ -13,20 +13,22 @@ header {
 }
 
 main {
-    margin: 1rem;
-
+    margin: 1rem auto;
+    max-width: 658px;
+    max-width: 658px;
 }
 
 footer {
     height: auto;
     background-color: transparent;
-    margin: 1rem;
+    margin: 1rem auto;
     text-align: right;
+    max-width: 658px;
 }
 
 h2 {
     font-family: 'Poiret One', cursive;
-    color: $pink-cloud;
+    color: $eraser-color;
     text-shadow: none;
     font-size: 1.2rem;
     text-align: center;
