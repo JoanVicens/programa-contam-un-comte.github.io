@@ -300,8 +300,9 @@ footer {
         font-size: 3rem;
         padding: 1rem;
         font-family: 'Supersonic Rocketship';
-        color: #f4b9aa;
-        text-shadow: 2px -0.5px , 1px 1px #f4b9aa;
+        color: $yellow-title;
+        text-shadow: 
+            2px -0.5px #c8b679, 1px 1px #e1cd88;
     }
 
     .nube-azul {
@@ -434,6 +435,7 @@ footer {
     a {
         text-decoration: none;
     }
+    
 }
 
 #download-btn {
