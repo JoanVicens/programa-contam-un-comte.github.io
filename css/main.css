@@ -487,24 +487,45 @@ footer .rapunzel {
   font-size: 2.5rem !important;
 }
 
-#qr .qr {
+#qr .qr-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-#qr img {
+#qr .qr-container a {
+  color: #4d7699;
+  font-size: 2.3rem;
+  font-family: 'Poiret One', cursive;
+  text-decoration: none;
+  margin: .7rem;
+  text-align: center;
+}
+
+#qr img.qr {
   width: 100%;
   border: 3px dashed #4d7699;
   background-color: white;
   border-radius: 15px;
   background-clip: padding-box;
+}
+
+#qr img.share {
+  height: 40px !important;
+  width: auto;
 }
 
 .social-wrapper {

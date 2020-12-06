@@ -18,6 +18,9 @@
     #qr {
         max-height: 100vh;
     }
+    #qr a {
+        display: none;
+    }
     .social-wrapper {
         height: 100vh;
     }
