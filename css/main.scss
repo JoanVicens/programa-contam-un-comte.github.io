@@ -22,6 +22,17 @@ $light-blue: #a8d6d7;
 
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 h1, h2 {
     color: $yellow-title;
@@ -107,7 +118,30 @@ header {
         img {
             -webkit-filter: drop-shadow(0px 5px 7px #3d5e7b);
             filter: drop-shadow(0px 5px 7px #3d5e7b);
+            position: relative;
+            z-index: 1;
         }
+
+        .loading {
+
+            margin: 0 auto;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                border: 8px solid $light-blue;
+                border-radius: 50%;
+                border-top: 8px solid $eraser-color;
+                width: 80px;
+                height: 80px;
+                left: calc(50% - 40px);
+                bottom: calc(50% - 60px);
+                -webkit-animation: spin 2s linear infinite; /* Safari */
+                animation: spin 2s linear infinite;
+                z-index: 0;
+        }
+    }
+        
     }
 
     .icons {

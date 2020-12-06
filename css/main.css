@@ -18,6 +18,27 @@
   src: url("fonts/chawp.ttf") format("truetype");
 }
 
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 h1, h2 {
   color: #fae497;
   text-shadow: 2px -0.5px #c8b679, 1px 1px #e1cd88;
@@ -102,6 +123,29 @@ header #portada p {
 header #portada img {
   -webkit-filter: drop-shadow(0px 5px 7px #3d5e7b);
   filter: drop-shadow(0px 5px 7px #3d5e7b);
+  position: relative;
+  z-index: 1;
+}
+
+header #portada .loading {
+  margin: 0 auto;
+  position: relative;
+}
+
+header #portada .loading::after {
+  content: '';
+  position: absolute;
+  border: 8px solid #a8d6d7;
+  border-radius: 50%;
+  border-top: 8px solid #4d7699;
+  width: 80px;
+  height: 80px;
+  left: calc(50% - 40px);
+  bottom: calc(50% - 60px);
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+  z-index: 0;
 }
 
 header .icons {
