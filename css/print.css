@@ -11,6 +11,10 @@
         display: none;
     }
 
+    #download-btn {
+        display: none;
+    }
+
     #qr {
         max-height: 100vh;
     }
@@ -28,5 +32,10 @@
     #qr h2 {
         font-size: 3rem;
         margin-top: 1.5rem;
+    }
+
+    .header-wrapper::after{
+        bottom: 53px;
+
     }
 }
