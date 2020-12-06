@@ -8,6 +8,12 @@ $maximum-width: 658px;
     z-index: 90;
 }
 
+.qr {
+    img {
+        max-height: 800px;
+    }
+}
+
 @media (min-width: 1585px) {
     .header-wrapper::after {
         display: none;
