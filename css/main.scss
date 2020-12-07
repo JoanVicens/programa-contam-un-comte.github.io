@@ -45,6 +45,7 @@ h1 {
     font-size: 2.3rem;
 }
 h2{
+    margin-top: .6rem;
     font-size: 1.7rem;
 }
 
@@ -209,6 +210,7 @@ main {
     }
 
     h2 {
+        margin-top: 1rem;
         margin-bottom: 1.2rem !important;
         font-size: 2.5rem !important;
     }
@@ -286,6 +288,12 @@ main {
     }
 }
 
+#narrador {
+    h3 {
+        margin-bottom: .8rem;
+    }
+}
+
 #banda { 
     img {
         width: 90%;
@@ -317,6 +325,7 @@ footer {
     position: relative;
 
     .large {
+        margin-top: .7rem;
         font-size: 3rem;
         padding: 1rem;
         font-family: 'Supersonic Rocketship';
@@ -525,4 +534,10 @@ footer {
 
     z-index: 999;
     box-shadow: 1px 1px 4px #111;
+}
+
+.portrait {
+    float: left;
+    margin-right: 1rem;
+    border: 5px solid $pink-cloud;
 }
